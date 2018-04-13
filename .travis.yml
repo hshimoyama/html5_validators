@@ -15,6 +15,7 @@ gemfile:
   - gemfiles/Gemfile.rails-4.2
   - gemfiles/Gemfile.rails-5.0
   - gemfiles/Gemfile.rails-5.1
+  - gemfiles/Gemfile.rails-5.2
   - gemfiles/Gemfile.rails-edge
 
 sudo: false
@@ -30,8 +31,16 @@ matrix:
     - rvm: 2.1.10
       gemfile: gemfiles/Gemfile.rails-5.1
     - rvm: 2.0.0
+      gemfile: gemfiles/Gemfile.rails-5.2
+    - rvm: 2.1.10
+      gemfile: gemfiles/Gemfile.rails-5.2
+    - rvm: 2.0.0
       gemfile: gemfiles/Gemfile.rails-edge
     - rvm: 2.1.10
+      gemfile: gemfiles/Gemfile.rails-edge
+    - rvm: 2.2.10
+      gemfile: gemfiles/Gemfile.rails-edge
+    - rvm: 2.3.7
       gemfile: gemfiles/Gemfile.rails-edge
     - rvm: 2.2.10
       gemfile: gemfiles/Gemfile.rails-3.2
