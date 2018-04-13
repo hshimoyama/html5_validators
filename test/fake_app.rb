@@ -5,7 +5,7 @@ require 'action_controller/railtie'
 # config
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
 
-app = Class.new(Rails::Application)
+app = FakeApp = Class.new(Rails::Application)
 app.config.secret_token = "You know I'm born to lose, and gambling's for fools, But that's the way I like it baby, I don't wanna live for ever, And don't forget the joker!"
 app.config.session_store :cookie_store, key: '_myapp_session'
 app.config.active_support.deprecation = :log
